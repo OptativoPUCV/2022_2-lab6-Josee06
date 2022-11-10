@@ -151,7 +151,17 @@ Node* DFS(Node* initial, int* cont)
 {
   Stack * stc = createStack();
 	push(stc, initial);
+  while(top(stc) != NULL)
+  {
+		Node * nod =(Node*) top(stc);
+		pop(stc);
 
+		if(is_final(nod)) return nod;
+
+		List * adj = get_adj_nodes(nod);
+    
+  }
+  	return NULL;
   
 }
 

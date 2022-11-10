@@ -399,3 +399,14 @@ sudoku.c:156:1: error: control reaches end of non-void function [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 7ff586f
+Thu 10 Nov 2022 01:02:43 AM UTC: 
+ sudoku.c | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:161:10: error: unused variable ‘adj’ [-Werror=unused-variable]
+  161 |   List * adj = get_adj_nodes(nod);
+      |          ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+cedc9bd
