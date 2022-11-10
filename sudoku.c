@@ -68,7 +68,7 @@ int is_valid(Node* n)
       {
 				if(marked_c[n->sudo[j][i]] == 0)
         {
-					marked_c[n->sudo[j][i]] = 1
+					marked_c[n->sudo[j][i]] = 1;
         }
 				else if (marked_c[n->sudo[j][i]] == 1)
         {
