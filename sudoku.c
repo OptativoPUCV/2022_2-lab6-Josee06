@@ -62,7 +62,7 @@ List* get_adj_nodes(Node* n)
 			{
 				l = i;
 				m = j;
-				comp = 1
+				comp = 1;
 				break;
       }
     }

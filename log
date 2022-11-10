@@ -188,3 +188,36 @@ test.c:7:8: error: ‘_strdup’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 630a451
+Thu 10 Nov 2022 12:35:05 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+test.c: In function ‘get_adj_nodes’:
+test.c:245:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  245 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:262:1: error: expected declaration or statement at end of input
+  262 | }
+      | ^
+In file included from test.c:5:
+sudoku.c:56:21: error: variable ‘comp’ set but not used [-Werror=unused-but-set-variable]
+   56 |   int l = 0, m = 0, comp = 0;
+      |                     ^~~~
+sudoku.c:56:14: error: variable ‘m’ set but not used [-Werror=unused-but-set-variable]
+   56 |   int l = 0, m = 0, comp = 0;
+      |              ^
+sudoku.c:56:7: error: variable ‘l’ set but not used [-Werror=unused-but-set-variable]
+   56 |   int l = 0, m = 0, comp = 0;
+      |       ^
+test.c:262: error: control reaches end of non-void function [-Werror=return-type]
+  262 | }
+      | 
+At top level:
+test.c:245:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  245 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:7:8: error: ‘_strdup’ defined but not used [-Werror=unused-function]
+    7 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bb1e636
