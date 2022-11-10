@@ -102,7 +102,6 @@ int is_valid(Node* n)
 }
 
 
-
 List* get_adj_nodes(Node* n)
 {
   List* list=createList();
@@ -134,7 +133,8 @@ List* get_adj_nodes(Node* n)
 }
 
 
-int is_final(Node* n){
+int is_final(Node* n)
+{
     return 0;
 }
 
