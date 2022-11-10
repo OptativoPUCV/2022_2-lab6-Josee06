@@ -77,11 +77,30 @@ int is_valid(Node* n)
       }
 		}	
 	}
-  
-      
-
+  for(int k = 0; k<9 ; k++)
+	{
+		int marked_sm[10] = {0,0,0,0,0,0,0,0,0,0};
+		for(int p=0;p<9;p++)
+		{
+		  int i=3*(k/3) + (p/3);
+		  int j=3*(k%3) + (p%3);
+                
+      if(n->sudo[i][j] != 0)
+			{
+        if(marked_sm[(n->sudo[i][j])]==0)
+        { 
+          marked_sm[(n->sudo[i][j])] = 1;
+        }
+        else if (marked_sm[(n->sudo[i][j])] == 1)
+        {  
+          return 0;
+        }
+			}
+		}		
+	}
     return 1;
 }
+
 
 
 List* get_adj_nodes(Node* n)
