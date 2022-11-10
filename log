@@ -421,3 +421,9 @@ sudoku.c:163:10: error: unused variable ‘adj’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 2b41610
+Thu 10 Nov 2022 01:03:30 AM UTC: 
+ sudoku.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+ tests:  10|0
+total_score: 70/70
+e58cc8f

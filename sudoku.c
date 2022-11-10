@@ -162,6 +162,14 @@ Node* DFS(Node* initial, int* cont)
     }
 		List * adj = get_adj_nodes(nod);
     
+    Node * reclist = (Node*) first(adj);
+		while(reclist != NULL)
+		{
+			push(stc, reclist);
+			reclist = (Node *) next(adj);
+		}
+		free(nod);
+    
   }
   	return NULL;
   
