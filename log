@@ -316,3 +316,18 @@ sudoku.c:139:1: error: control reaches end of non-void function [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 879abd4
+Thu 10 Nov 2022 12:45:10 AM UTC: 
+ sudoku.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_final’:
+sudoku.c:145:23: error: ‘j’ undeclared (first use in this function)
+  145 |         if(n->sudo[i][j]==0)
+      |                       ^
+sudoku.c:145:23: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:148:1: error: control reaches end of non-void function [-Werror=return-type]
+  148 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+f2136d3
