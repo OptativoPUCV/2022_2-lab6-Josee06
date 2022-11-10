@@ -54,7 +54,9 @@ List* get_adj_nodes(Node* n)
   List* list=createList();
   if (n == NULL) return NULL;
   int l = 0, m = 0, comp = 0;
-  
+  for(int i=0 ; i<9 ; i++)
+	{
+		for(int k=0 ; j<9 ; j++)
   return list;
 }
 
