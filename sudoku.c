@@ -64,6 +64,20 @@ int is_valid(Node* n)
               return 0;
           }
         }
+      if (n->sudo[j][i] != 0)
+      {
+				if(marked_c[n->sudo[j][i]] == 0)
+        {
+					marked_c[n->sudo[j][i]] = 1
+        }
+				else if (marked_c[n->sudo[j][i]] == 1)
+        {
+					return 0;
+        }
+      }
+		}	
+	}
+  
       
 
     return 1;

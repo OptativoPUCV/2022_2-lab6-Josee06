@@ -263,3 +263,16 @@ test.c:7:8: error: ‘_strdup’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 08fb4f4
+Thu 10 Nov 2022 12:42:01 AM UTC: 
+ sudoku.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:71:33: error: expected ‘;’ before ‘}’ token
+   71 |      marked_c[n->sudo[j][i]] = 1
+      |                                 ^
+      |                                 ;
+   72 |         }
+      |         ~                        
+Compilation failed
+f097993
