@@ -2,3 +2,20 @@ Thu 10 Nov 2022 12:30:53 AM UTC:
  tests:  0|5
 total_score: 0/70
 0ab0802
+Thu 10 Nov 2022 12:32:52 AM UTC: 
+ sudoku.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:56:21: error: unused variable ‘comp’ [-Werror=unused-variable]
+   56 |   int l = 0, m = 0, comp = 0;
+      |                     ^~~~
+sudoku.c:56:14: error: unused variable ‘m’ [-Werror=unused-variable]
+   56 |   int l = 0, m = 0, comp = 0;
+      |              ^
+sudoku.c:56:7: error: unused variable ‘l’ [-Werror=unused-variable]
+   56 |   int l = 0, m = 0, comp = 0;
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+ca010d6
