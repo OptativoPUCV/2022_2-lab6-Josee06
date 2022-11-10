@@ -359,3 +359,21 @@ sudoku.c:153:1: error: control reaches end of non-void function [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 c0b3fa6
+Thu 10 Nov 2022 12:57:34 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_final’:
+sudoku.c:147:11: error: expected ‘;’ before ‘}’ token
+  147 |   return 1
+      |           ^
+      |           ;
+  148 | }
+      | ~          
+sudoku.c: In function ‘DFS’:
+sudoku.c:153:1: error: control reaches end of non-void function [-Werror=return-type]
+  153 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+71d7f38
