@@ -233,3 +233,33 @@ Thu 10 Nov 2022 12:38:31 AM UTC:
  tests:  2|4
 total_score: 15/70
 69e2f07
+Thu 10 Nov 2022 12:40:52 AM UTC: 
+ sudoku.c | 20 ++++++++++++++++++++
+ 1 file changed, 20 insertions(+)
+test.c: In function ‘is_valid’:
+test.c:245:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  245 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:262:1: error: expected declaration or statement at end of input
+  262 | }
+      | ^
+In file included from test.c:5:
+sudoku.c:51:7: error: unused variable ‘marked_c’ [-Werror=unused-variable]
+   51 |   int marked_c[10] = {0,0,0,0,0,0,0,0,0,0};
+      |       ^~~~~~~~
+test.c:262:1: error: expected declaration or statement at end of input
+  262 | }
+      | ^
+test.c:262: error: control reaches end of non-void function [-Werror=return-type]
+  262 | }
+      | 
+At top level:
+test.c:245:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  245 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:7:8: error: ‘_strdup’ defined but not used [-Werror=unused-function]
+    7 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+08fb4f4
