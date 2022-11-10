@@ -156,8 +156,10 @@ Node* DFS(Node* initial, int* cont)
 		Node * nod =(Node*) top(stc);
 		pop(stc);
 
-		if(is_final(nod)) return nod;
-
+		if(is_final(nod)) 
+    {
+      return nod;
+    }
 		List * adj = get_adj_nodes(nod);
     
   }

@@ -410,3 +410,14 @@ sudoku.c:161:10: error: unused variable ‘adj’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 cedc9bd
+Thu 10 Nov 2022 01:03:11 AM UTC: 
+ sudoku.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:163:10: error: unused variable ‘adj’ [-Werror=unused-variable]
+  163 |   List * adj = get_adj_nodes(nod);
+      |          ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+2b41610
