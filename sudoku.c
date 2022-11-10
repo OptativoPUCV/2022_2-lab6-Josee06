@@ -43,7 +43,8 @@ void print_node(Node* n){
     printf("\n");
 }
 
-int is_valid(Node* n){
+int is_valid(Node* n)
+{
 
     return 1;
 }
@@ -75,10 +76,7 @@ List* get_adj_nodes(Node* n)
 			cpy_node->sudo[l][m] = k;
 			if(is_valid(cpy_node))
 				pushBack(list, cpy_node);
-		}
-  
-   
-      
+		}    
   return list;
 }
 
