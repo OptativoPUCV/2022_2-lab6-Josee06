@@ -66,6 +66,18 @@ List* get_adj_nodes(Node* n)
 				break;
       }
     }
+    if (comp== 1) break;
+  }
+  if(comp!=0)
+		for(int k = 1 ; k<= 9 ; k++)
+		{
+			Node * cpy_node = copy(n);
+			cpy_node->sudo[l][m] = k;
+			if(is_valid(cpy_node))
+				pushBack(list, cpy_node);
+		}
+  
+   
       
   return list;
 }
